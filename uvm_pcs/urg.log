@@ -1,0 +1,8 @@
+Command: urg -dir coverage.vdb -format both -report coverage_report -log urg.log
+Date: Mon May 11 15:57:30 2026
+
+URG Version U-2023.03-SP2-8 Copyright (c) 1991-2023 by Synopsys Inc.
+
+Note-[URG-RDG] Report directory generated
+  Report written to directory coverage_report
+

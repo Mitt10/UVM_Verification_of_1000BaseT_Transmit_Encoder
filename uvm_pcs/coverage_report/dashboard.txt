@@ -1,0 +1,33 @@
+Dashboard
+
+Date: Mon May 11 15:57:31 2026
+
+User: 018282472
+
+Version: U-2023.03-SP2-8
+Command line: urg -dir coverage.vdb -format both -report coverage_report -log urg.log
+Number of tests: 11
+
+-------------------------------------------------------------------------------
+Total Coverage Summary 
+SCORE  LINE   COND   TOGGLE FSM    BRANCH ASSERT GROUP  
+ 81.58  93.38  99.57  54.03  46.67  92.61  87.50  97.32 
+
+
+-------------------------------------------------------------------------------
+Hierarchical coverage data for top-level instances 
+SCORE  LINE   COND   TOGGLE FSM    BRANCH ASSERT NAME       
+ 78.96  93.38  99.57  54.03  46.67  92.61  87.50 pcs_tb_top 
+
+
+-------------------------------------------------------------------------------
+Total Module Definition Coverage Summary 
+SCORE  LINE   COND   TOGGLE FSM    BRANCH ASSERT 
+ 77.53  93.38  99.57  54.03  46.67  92.61  78.95 
+
+
+-------------------------------------------------------------------------------
+Total Groups Coverage Summary 
+SCORE  WEIGHT 
+ 97.32 1      
+

@@ -1,0 +1,90 @@
+<session version="1.1" release="U-2023.03-SP2-8" timestp="2026-05-11 22:57:30 GMT">
+  <info>
+    <attr name="datetime" value="Mon May 11 15:57:31 2026
+"/>
+    <attr name="command" value="urg -dir coverage.vdb -format both -report coverage_report -log urg.log"/>
+    <attr name="top_instance" value="pcs_tb_top"/>
+  </info>
+  <hvp>
+    <datadef>
+      <metdef name="Line" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="Cond" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="Toggle" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="FSM" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="Branch" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="Assert" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="Group" type="percent" aggregator="average" builtin="1" />
+    </datadef>
+  </hvp>
+  <old_coverage>
+  <scope type="top" name="top">
+    <metric name="Line" value="621/665" />
+    <metric name="Cond" value="693/696" />
+    <metric name="Toggle" value="510/944" />
+    <metric name="FSM" value="7/15" />
+    <metric name="Branch" value="551/595" />
+    <metric name="Assert" value="14/16" />
+    <metric name="Group" value="97.3214%" />
+  </scope>
+  <scope type="instance" name="top">
+  </scope>
+  <scope type="group" name="top">
+    <scope type="group" name="$unit::pcs_coverage::cg_csr_patterns">
+      <metric name="Group" value="62.5%" />
+    </scope>
+    <scope type="group" name="$unit::pcs_coverage::cg_b2b_trans">
+      <metric name="Group" value="100%" />
+    </scope>
+    <scope type="group" name="$unit::pcs_coverage::cg_txen_edges">
+      <metric name="Group" value="100%" />
+    </scope>
+    <scope type="group" name="$unit::pcs_coverage::cg_sdd_pattern">
+      <metric name="Group" value="100%" />
+    </scope>
+    <scope type="group" name="$unit::pcs_coverage::cg_din7_data">
+      <metric name="Group" value="100%" />
+    </scope>
+    <scope type="group" name="$unit::pcs_coverage::cg_esd_pattern">
+      <metric name="Group" value="100%" />
+    </scope>
+    <scope type="group" name="$unit::pcs_coverage::cg_pkt_length">
+      <metric name="Group" value="100%" />
+    </scope>
+    <scope type="group" name="$unit::pcs_coverage::cg_phase_trans">
+      <metric name="Group" value="100%" />
+    </scope>
+    <scope type="group" name="$unit::pcs_coverage::cg_txen_x_din7">
+      <metric name="Group" value="100%" />
+    </scope>
+    <scope type="group" name="$unit::pcs_coverage::cg_esd_mismatch">
+      <metric name="Group" value="100%" />
+    </scope>
+    <scope type="group" name="$unit::pcs_coverage::cg_stream_phase">
+      <metric name="Group" value="100%" />
+    </scope>
+    <scope type="group" name="$unit::pcs_coverage::cg_sign_reversal">
+      <metric name="Group" value="100%" />
+    </scope>
+    <scope type="group" name="$unit::pcs_coverage::cg_din_ranges">
+      <metric name="Group" value="100%" />
+    </scope>
+    <scope type="group" name="$unit::pcs_coverage::cg_pam5_sym">
+      <metric name="Group" value="100%" />
+    </scope>
+  </scope>
+  <scope type="assert" name="Statistics">
+    <scorelist type="total" name="Design Hierarchy Assert">
+      <score name="Assert" value="14/16" />
+      <score name="Score" value="87.50" />
+    </scorelist>
+    <scorelist type="total" name="Module List Assert">
+      <score name="Assert" value="15/19" />
+      <score name="Score" value="78.95" />
+    </scorelist>
+    <scorelist type="total" name="Assertion">
+      <score name="Assert" value="15/19" />
+      <score name="Score" value="78.95" />
+    </scorelist>
+  </scope>
+  </old_coverage>
+</session>

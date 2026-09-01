@@ -1,0 +1,146 @@
+Info: [VCS_SAVE_RESTORE_INFO] ASLR (Address Space Layout Randomization) is detected on the machine. To enable $save functionality, ASLR will be switched off and simv re-executed.
+Please use '-no_save' simv switch to avoid re-execution or '-suppress=ASLR_DETECTED_INFO' to suppress this message.
+Chronologic VCS simulator copyright 1991-2023
+Contains Synopsys proprietary information.
+Compiler version U-2023.03-SP2-8_Full64; Runtime version U-2023.03-SP2-8_Full64;  May 11 15:57 2026
+UVM_INFO /home/morris/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+
+ VCS Coverage Metrics Release U-2023.03-SP2-8_Full64 Copyright (c) 1991-2023 by Synopsys Inc.
+UVM_INFO @ 0: reporter [RNTST] Running test pcs_altbit_test...
+UVM_INFO uvm_tb.sv(1960) @ 0: uvm_test_top [TEST] === ALTERNATING BIT TEST ===
+"uvm_tb.sv", 2217: pcs_tb_top.AST_NOX_A: started at 4000ps failed at 4000ps
+	Offending '(!$isunknown(pcs_tb_top.dut_if.Dout[3]))'
+Error: "uvm_tb.sv", 2217: pcs_tb_top.AST_NOX_A: at time 4000 ps
+[ASSERT/NOX] lane A is X/Z @ 4000
+"uvm_tb.sv", 2219: pcs_tb_top.AST_NOX_B: started at 4000ps failed at 4000ps
+	Offending '(!$isunknown(pcs_tb_top.dut_if.Dout[2]))'
+Error: "uvm_tb.sv", 2219: pcs_tb_top.AST_NOX_B: at time 4000 ps
+[ASSERT/NOX] lane B is X/Z @ 4000
+"uvm_tb.sv", 2221: pcs_tb_top.AST_NOX_C: started at 4000ps failed at 4000ps
+	Offending '(!$isunknown(pcs_tb_top.dut_if.Dout[1]))'
+Error: "uvm_tb.sv", 2221: pcs_tb_top.AST_NOX_C: at time 4000 ps
+[ASSERT/NOX] lane C is X/Z @ 4000
+"uvm_tb.sv", 2223: pcs_tb_top.AST_NOX_D: started at 4000ps failed at 4000ps
+	Offending '(!$isunknown(pcs_tb_top.dut_if.Dout[0]))'
+Error: "uvm_tb.sv", 2223: pcs_tb_top.AST_NOX_D: at time 4000 ps
+[ASSERT/NOX] lane D is X/Z @ 4000
+UVM_ERROR uvm_tb.sv(1312) @ 68000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=db0 act=036 ph=PH_IDLE cycle=2
+UVM_ERROR uvm_tb.sv(1312) @ 76000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=006 act=180 ph=PH_IDLE cycle=3
+UVM_ERROR uvm_tb.sv(1312) @ 84000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=1b0 act=036 ph=PH_IDLE cycle=4
+UVM_ERROR uvm_tb.sv(1312) @ 92000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=006 act=000 ph=PH_IDLE cycle=5
+UVM_ERROR uvm_tb.sv(1312) @ 100000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=0b0 act=0b6 ph=PH_IDLE cycle=6
+UVM_ERROR uvm_tb.sv(1312) @ 108000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=006 act=180 ph=PH_SDD cycle=7
+"uvm_tb.sv", 2275: pcs_tb_top.AST_SDD1_NONZERO: started at 108000ps failed at 108000ps
+	Offending '((((pcs_tb_top.dut_if.Dout[3] inside {3'b010, 3'b110}) && (pcs_tb_top.dut_if.Dout[2] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[1] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[0] inside {3'b010, 3'b110}))'
+Error: "uvm_tb.sv", 2275: pcs_tb_top.AST_SDD1_NONZERO: at time 108000 ps
+[ASSERT/SDD] SDD1: lane(s) not ±2 at TX_EN rise: got 180 @ 108000
+"uvm_tb.sv", 2355: pcs_tb_top.AST_SDD_EXACTLY2: started at 108000ps failed at 124000ps
+	Offending '(!((((pcs_tb_top.dut_if.Dout[3] inside {3'b010, 3'b110}) && (pcs_tb_top.dut_if.Dout[2] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[1] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[0] inside {3'b010, 3'b110})))'
+Error: "uvm_tb.sv", 2355: pcs_tb_top.AST_SDD_EXACTLY2: at time 124000 ps
+[ASSERT/ORDER] All-±2 output persists after SDD2 (stuck in SDD?) @ 124000
+UVM_ERROR uvm_tb.sv(1312) @ 132000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=030 act=036 ph=PH_DATA cycle=10
+UVM_ERROR uvm_tb.sv(1312) @ 140000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=18f act=1bf ph=PH_DATA cycle=11
+UVM_ERROR uvm_tb.sv(1312) @ 148000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=3c8 act=279 ph=PH_DATA cycle=12
+UVM_ERROR uvm_tb.sv(1312) @ 156000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=c39 act=3f0 ph=PH_CSR cycle=13
+UVM_ERROR uvm_tb.sv(1312) @ 164000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=2b6 act=5b2 ph=PH_CSR cycle=14
+UVM_ERROR uvm_tb.sv(1312) @ 172000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=d89 act=4b2 ph=PH_ESD cycle=15
+UVM_ERROR uvm_tb.sv(1312) @ 180000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=db6 act=c96 ph=PH_ESD cycle=16
+"uvm_tb.sv", 2372: pcs_tb_top.AST_ESD_EXACTLY2: started at 156000ps failed at 188000ps
+	Offending '(!((((pcs_tb_top.dut_if.Dout[3] inside {3'b010, 3'b110}) && (pcs_tb_top.dut_if.Dout[2] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[1] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[0] inside {3'b010, 3'b110})))'
+Error: "uvm_tb.sv", 2372: pcs_tb_top.AST_ESD_EXACTLY2: at time 188000 ps
+[ASSERT/ORDER] All-±2 output persists after ESD2 (stuck in ESD?) @ 188000
+UVM_ERROR uvm_tb.sv(1312) @ 196000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=000 act=012 ph=PH_IDLE cycle=18
+UVM_ERROR uvm_tb.sv(1312) @ 204000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=096 act=080 ph=PH_IDLE cycle=19
+UVM_ERROR uvm_tb.sv(1312) @ 212000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=1b0 act=036 ph=PH_IDLE cycle=20
+UVM_ERROR uvm_tb.sv(1312) @ 220000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=002 act=1b2 ph=PH_IDLE cycle=21
+UVM_ERROR uvm_tb.sv(1312) @ 228000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=190 act=000 ph=PH_IDLE cycle=22
+UVM_ERROR uvm_tb.sv(1312) @ 236000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=006 act=000 ph=PH_IDLE cycle=23
+UVM_ERROR uvm_tb.sv(1312) @ 252000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=000 act=180 ph=PH_IDLE cycle=25
+UVM_ERROR uvm_tb.sv(1312) @ 260000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=192 act=012 ph=PH_IDLE cycle=26
+UVM_ERROR uvm_tb.sv(1312) @ 268000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=000 act=180 ph=PH_IDLE cycle=27
+UVM_ERROR uvm_tb.sv(1312) @ 276000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=cb0 act=036 ph=PH_IDLE cycle=28
+UVM_ERROR uvm_tb.sv(1312) @ 284000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=002 act=182 ph=PH_IDLE cycle=29
+UVM_ERROR uvm_tb.sv(1312) @ 292000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=1b0 act=030 ph=PH_IDLE cycle=30
+UVM_ERROR uvm_tb.sv(1312) @ 300000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=002 act=030 ph=PH_IDLE cycle=31
+UVM_ERROR uvm_tb.sv(1312) @ 308000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=090 act=086 ph=PH_IDLE cycle=32
+UVM_ERROR uvm_tb.sv(1312) @ 316000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=006 act=180 ph=PH_IDLE cycle=33
+UVM_ERROR uvm_tb.sv(1312) @ 324000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=182 act=032 ph=PH_IDLE cycle=34
+UVM_ERROR uvm_tb.sv(1312) @ 332000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=c10 act=180 ph=PH_IDLE cycle=35
+UVM_ERROR uvm_tb.sv(1312) @ 340000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=010 act=016 ph=PH_IDLE cycle=36
+UVM_INFO /home/morris/uvm-1.2/src/base/uvm_objection.svh(1270) @ 348000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO uvm_tb.sv(1645) @ 348000: uvm_test_top.env.cov [COV] ======= COVERAGE =======
+UVM_INFO uvm_tb.sv(1647) @ 348000: uvm_test_top.env.cov [COV]   stream_phase : 100.0%
+UVM_INFO uvm_tb.sv(1649) @ 348000: uvm_test_top.env.cov [COV]   pam5_sym     : 90.0%
+UVM_INFO uvm_tb.sv(1651) @ 348000: uvm_test_top.env.cov [COV]   sign_reversal: 100.0%
+UVM_INFO uvm_tb.sv(1653) @ 348000: uvm_test_top.env.cov [COV]   sdd_pattern  : 50.0%
+UVM_INFO uvm_tb.sv(1655) @ 348000: uvm_test_top.env.cov [COV]   esd_pattern  : 0.0%
+UVM_INFO uvm_tb.sv(1657) @ 348000: uvm_test_top.env.cov [COV]   phase_trans  : 100.0%
+UVM_INFO uvm_tb.sv(1660) @ 348000: uvm_test_top.env.cov [COV]   txen_edges   : 100.0%
+UVM_INFO uvm_tb.sv(1662) @ 348000: uvm_test_top.env.cov [COV]   din_ranges   : 75.0%
+UVM_INFO uvm_tb.sv(1664) @ 348000: uvm_test_top.env.cov [COV]   din7_data    : 50.0%
+UVM_INFO uvm_tb.sv(1666) @ 348000: uvm_test_top.env.cov [COV]   csr_patterns : 12.5%
+UVM_INFO uvm_tb.sv(1668) @ 348000: uvm_test_top.env.cov [COV]   esd_mismatch : 75.0%
+UVM_INFO uvm_tb.sv(1670) @ 348000: uvm_test_top.env.cov [COV]   pkt_length   : 60.0%
+UVM_INFO uvm_tb.sv(1672) @ 348000: uvm_test_top.env.cov [COV]   b2b_trans    : 66.7%
+UVM_INFO uvm_tb.sv(1674) @ 348000: uvm_test_top.env.cov [COV]   txen_x_din7  : 100.0%
+UVM_INFO uvm_tb.sv(1676) @ 348000: uvm_test_top.env.cov [COV] ========================
+UVM_INFO uvm_tb.sv(1322) @ 348000: uvm_test_top.env.sb [SB] ============ SCOREBOARD ============
+UVM_INFO uvm_tb.sv(1323) @ 348000: uvm_test_top.env.sb [SB]   Total   : 36
+UVM_INFO uvm_tb.sv(1324) @ 348000: uvm_test_top.env.sb [SB]   Passed  : 39
+UVM_INFO uvm_tb.sv(1325) @ 348000: uvm_test_top.env.sb [SB]   Failed  : 31
+UVM_INFO uvm_tb.sv(1326) @ 348000: uvm_test_top.env.sb [SB]   PAM5 err: 0
+UVM_INFO uvm_tb.sv(1327) @ 348000: uvm_test_top.env.sb [SB]   Seq  err: 0
+UVM_INFO uvm_tb.sv(1328) @ 348000: uvm_test_top.env.sb [SB]   Sym  err: 31
+UVM_ERROR uvm_tb.sv(1332) @ 348000: uvm_test_top.env.sb [SB]   *** 31 FAILURES ***
+UVM_INFO uvm_tb.sv(1333) @ 348000: uvm_test_top.env.sb [SB] ====================================
+UVM_INFO /home/morris/uvm-1.2/src/base/uvm_report_server.svh(847) @ 348000: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :   28
+UVM_WARNING :    0
+UVM_ERROR :   32
+UVM_FATAL :    0
+** Report counts by id
+[COV]    16
+[RNTST]     1
+[SB]     9
+[SB/SYM]    31
+[TEST]     1
+[TEST_DONE]     1
+[UVM/RELNOTES]     1
+
+$finish called from file "/home/morris/uvm-1.2/src/base/uvm_root.svh", line 517.
+$finish at simulation time               348000
+
+---------------------------------------------------------------------------
+VCS Coverage Metrics: during simulation line, cond, FSM, branch, tgl was monitored
+---------------------------------------------------------------------------
+
+ Coverage status: End of All Coverages ...
+
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 348000 ps
+CPU Time:      0.450 seconds;       Data structure size:   0.3Mb
+Mon May 11 15:57:23 2026

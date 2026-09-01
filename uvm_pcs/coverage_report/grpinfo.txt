@@ -1,0 +1,904 @@
+Group : $unit::pcs_coverage::cg_csr_patterns
+
+===============================================================================
+Group : $unit::pcs_coverage::cg_csr_patterns
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+ 62.50 1      100    1        64           64            
+
+
+Source File(s) : 
+
+/home/018282472@SJSUAD.SJSU.EDU/uvm_pcs/uvm_tb.sv
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   $unit::pcs_coverage::cg_csr_patterns
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 8        3         5       62.50   
+
+
+Variables for Group  $unit::pcs_coverage::cg_csr_patterns
+
+
+VARIABLE EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_csr   8        3         5       62.50   100  1      1        0                    
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_csr
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 8        3         5       62.50   
+
+
+User Defined Bins for cp_csr
+
+
+Uncovered bins
+
+NAME COUNT AT LEAST NUMBER 
+csr6 0     1        1      
+csr5 0     1        1      
+csr1 0     1        1      
+
+
+Covered bins
+
+NAME COUNT AT LEAST 
+csr7 2     1        
+csr4 3     1        
+csr3 2     1        
+csr2 1     1        
+csr0 6     1        
+
+
+Group : $unit::pcs_coverage::cg_b2b_trans
+
+===============================================================================
+Group : $unit::pcs_coverage::cg_b2b_trans
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+100.00 1      100    1        64           64            
+
+
+Source File(s) : 
+
+/home/018282472@SJSUAD.SJSU.EDU/uvm_pcs/uvm_tb.sv
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   $unit::pcs_coverage::cg_b2b_trans
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 3        0         3       100.00  
+
+
+Variables for Group  $unit::pcs_coverage::cg_b2b_trans
+
+
+VARIABLE EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_b2b   3        0         3       100.00  100  1      1        0                    
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_b2b
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 3        0         3       100.00  
+
+
+User Defined Bins for cp_b2b
+
+
+Bins
+
+NAME        COUNT AT LEAST 
+idle_to_sdd 244   1        
+esd_to_idle 244   1        
+esd_to_sdd  27    1        
+
+
+Group : $unit::pcs_coverage::cg_txen_edges
+
+===============================================================================
+Group : $unit::pcs_coverage::cg_txen_edges
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+100.00 1      100    1        64           64            
+
+
+Source File(s) : 
+
+/home/018282472@SJSUAD.SJSU.EDU/uvm_pcs/uvm_tb.sv
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   $unit::pcs_coverage::cg_txen_edges
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 2        0         2       100.00  
+
+
+Variables for Group  $unit::pcs_coverage::cg_txen_edges
+
+
+VARIABLE EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_rise  2        0         2       100.00  100  1      1        0                    
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_rise
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_rise
+
+
+Bins
+
+NAME    COUNT AT LEAST 
+tx_fall 271   1        
+tx_rise 244   1        
+
+
+Group : $unit::pcs_coverage::cg_sdd_pattern
+
+===============================================================================
+Group : $unit::pcs_coverage::cg_sdd_pattern
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+100.00 1      100    1        64           64            
+
+
+Source File(s) : 
+
+/home/018282472@SJSUAD.SJSU.EDU/uvm_pcs/uvm_tb.sv
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   $unit::pcs_coverage::cg_sdd_pattern
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 2        0         2       100.00  
+
+
+Variables for Group  $unit::pcs_coverage::cg_sdd_pattern
+
+
+VARIABLE EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_sdd   2        0         2       100.00  100  1      1        0                    
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_sdd
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_sdd
+
+
+Bins
+
+NAME COUNT AT LEAST 
+sdd2 24    1        
+sdd1 32    1        
+
+
+Group : $unit::pcs_coverage::cg_din7_data
+
+===============================================================================
+Group : $unit::pcs_coverage::cg_din7_data
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+100.00 1      100    1        64           64            
+
+
+Source File(s) : 
+
+/home/018282472@SJSUAD.SJSU.EDU/uvm_pcs/uvm_tb.sv
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   $unit::pcs_coverage::cg_din7_data
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 2        0         2       100.00  
+
+
+Variables for Group  $unit::pcs_coverage::cg_din7_data
+
+
+VARIABLE EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_din7  2        0         2       100.00  100  1      1        0                    
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_din7
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_din7
+
+
+Bins
+
+NAME      COUNT AT LEAST 
+din7_one  759   1        
+din7_zero 364   1        
+
+
+Group : $unit::pcs_coverage::cg_esd_pattern
+
+===============================================================================
+Group : $unit::pcs_coverage::cg_esd_pattern
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+100.00 1      100    1        64           64            
+
+
+Source File(s) : 
+
+/home/018282472@SJSUAD.SJSU.EDU/uvm_pcs/uvm_tb.sv
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   $unit::pcs_coverage::cg_esd_pattern
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 2        0         2       100.00  
+
+
+Variables for Group  $unit::pcs_coverage::cg_esd_pattern
+
+
+VARIABLE EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_esd   2        0         2       100.00  100  1      1        0                    
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_esd
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_esd
+
+
+Bins
+
+NAME COUNT AT LEAST 
+esd2 32    1        
+esd1 23    1        
+
+
+Group : $unit::pcs_coverage::cg_pkt_length
+
+===============================================================================
+Group : $unit::pcs_coverage::cg_pkt_length
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+100.00 1      100    1        64           64            
+
+
+Source File(s) : 
+
+/home/018282472@SJSUAD.SJSU.EDU/uvm_pcs/uvm_tb.sv
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   $unit::pcs_coverage::cg_pkt_length
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 5        0         5       100.00  
+
+
+Variables for Group  $unit::pcs_coverage::cg_pkt_length
+
+
+VARIABLE    EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_data_sym 5        0         5       100.00  100  1      1        0                    
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_data_sym
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 5        0         5       100.00  
+
+
+User Defined Bins for cp_data_sym
+
+
+Bins
+
+NAME   COUNT AT LEAST 
+sym_p2 247   1        
+sym_p1 138   1        
+sym_z  380   1        
+sym_n1 117   1        
+sym_n2 241   1        
+
+
+Group : $unit::pcs_coverage::cg_phase_trans
+
+===============================================================================
+Group : $unit::pcs_coverage::cg_phase_trans
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+100.00 1      100    1        64           64            
+
+
+Source File(s) : 
+
+/home/018282472@SJSUAD.SJSU.EDU/uvm_pcs/uvm_tb.sv
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   $unit::pcs_coverage::cg_phase_trans
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 5        0         5       100.00  
+
+
+Variables for Group  $unit::pcs_coverage::cg_phase_trans
+
+
+VARIABLE EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_trans 5        0         5       100.00  100  1      1        0                    
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_trans
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 5        0         5       100.00  
+
+
+User Defined Bins for cp_trans
+
+
+Bins
+
+NAME        COUNT AT LEAST 
+esd_to_idle 244   1        
+csr_to_esd  271   1        
+data_to_csr 271   1        
+sdd_to_data 271   1        
+idle_to_sdd 244   1        
+
+
+Group : $unit::pcs_coverage::cg_txen_x_din7
+
+===============================================================================
+Group : $unit::pcs_coverage::cg_txen_x_din7
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+100.00 1      100    1        64           64            
+
+
+Source File(s) : 
+
+/home/018282472@SJSUAD.SJSU.EDU/uvm_pcs/uvm_tb.sv
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   $unit::pcs_coverage::cg_txen_x_din7
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 4        0         4       100.00  
+Crosses   4        0         4       100.00  
+
+
+Variables for Group  $unit::pcs_coverage::cg_txen_x_din7
+
+
+VARIABLE EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_txen  2        0         2       100.00  100  1      1        0                    
+cp_din7  2        0         2       100.00  100  1      1        0                    
+
+
+Crosses for Group  $unit::pcs_coverage::cg_txen_x_din7
+
+
+CROSS    EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cp_cross 4        0         4       100.00  100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_txen
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_txen
+
+
+Bins
+
+NAME    COUNT AT LEAST 
+tx_high 1665  1        
+tx_low  2201  1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_din7
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_din7
+
+
+Bins
+
+NAME    COUNT AT LEAST 
+din7_hi 2882  1        
+din7_lo 984   1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cp_cross
+
+
+Samples crossed: cp_txen cp_din7
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 4        0         4       100.00          
+
+
+Automatically Generated Cross Bins for cp_cross
+
+
+Bins
+
+cp_txen cp_din7 COUNT AT LEAST 
+tx_high din7_hi 1172  1        
+tx_high din7_lo 493   1        
+tx_low  din7_hi 1710  1        
+tx_low  din7_lo 491   1        
+
+
+Group : $unit::pcs_coverage::cg_esd_mismatch
+
+===============================================================================
+Group : $unit::pcs_coverage::cg_esd_mismatch
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+100.00 1      100    1        64           64            
+
+
+Source File(s) : 
+
+/home/018282472@SJSUAD.SJSU.EDU/uvm_pcs/uvm_tb.sv
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   $unit::pcs_coverage::cg_esd_mismatch
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 3        0         3       100.00  
+
+
+Variables for Group  $unit::pcs_coverage::cg_esd_mismatch
+
+
+VARIABLE    EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_esd_ok   1        0         1       100.00  100  1      1        0                    
+cp_mismatch 2        0         2       100.00  100  1      1        0                    
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_esd_ok
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 1        0         1       100.00  
+
+
+User Defined Bins for cp_esd_ok
+
+
+Bins
+
+NAME       COUNT AT LEAST 
+esd_active 542   1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_mismatch
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_mismatch
+
+
+Bins
+
+NAME     COUNT AT LEAST 
+mismatch 464   1        
+match    78    1        
+
+
+Group : $unit::pcs_coverage::cg_stream_phase
+
+===============================================================================
+Group : $unit::pcs_coverage::cg_stream_phase
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+100.00 1      100    1        64           64            
+
+
+Source File(s) : 
+
+/home/018282472@SJSUAD.SJSU.EDU/uvm_pcs/uvm_tb.sv
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   $unit::pcs_coverage::cg_stream_phase
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 5        0         5       100.00  
+
+
+Variables for Group  $unit::pcs_coverage::cg_stream_phase
+
+
+VARIABLE EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_ph    5        0         5       100.00  100  1      1        0                    
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_ph
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 5        0         5       100.00  
+
+
+User Defined Bins for cp_ph
+
+
+Bins
+
+NAME COUNT AT LEAST 
+esd  542   1        
+csr  542   1        
+data 1123  1        
+sdd  542   1        
+idle 1117  1        
+
+
+Group : $unit::pcs_coverage::cg_sign_reversal
+
+===============================================================================
+Group : $unit::pcs_coverage::cg_sign_reversal
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+100.00 1      100    1        64           64            
+
+
+Source File(s) : 
+
+/home/018282472@SJSUAD.SJSU.EDU/uvm_pcs/uvm_tb.sv
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   $unit::pcs_coverage::cg_sign_reversal
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 6        0         6       100.00  
+
+
+Variables for Group  $unit::pcs_coverage::cg_sign_reversal
+
+
+VARIABLE EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_A_s   3        0         3       100.00  100  1      1        0                    
+cp_B_s   3        0         3       100.00  100  1      1        0                    
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_A_s
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 3        0         3       100.00  
+
+
+User Defined Bins for cp_A_s
+
+
+Bins
+
+NAME COUNT AT LEAST 
+pos  1310  1        
+zero 1328  1        
+neg  1228  1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_B_s
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 3        0         3       100.00  
+
+
+User Defined Bins for cp_B_s
+
+
+Bins
+
+NAME COUNT AT LEAST 
+pos  1545  1        
+zero 741   1        
+neg  1580  1        
+
+
+Group : $unit::pcs_coverage::cg_din_ranges
+
+===============================================================================
+Group : $unit::pcs_coverage::cg_din_ranges
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+100.00 1      100    1        64           64            
+
+
+Source File(s) : 
+
+/home/018282472@SJSUAD.SJSU.EDU/uvm_pcs/uvm_tb.sv
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   $unit::pcs_coverage::cg_din_ranges
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 8        0         8       100.00  
+
+
+Variables for Group  $unit::pcs_coverage::cg_din_ranges
+
+
+VARIABLE EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_din   8        0         8       100.00  100  1      1        0                    
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_din
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 8        0         8       100.00  
+
+
+User Defined Bins for cp_din
+
+
+Bins
+
+NAME   COUNT AT LEAST 
+range7 100   1        
+range6 139   1        
+range5 1218  1        
+range4 1425  1        
+range3 109   1        
+range2 132   1        
+range1 231   1        
+range0 512   1        
+
+
+Group : $unit::pcs_coverage::cg_pam5_sym
+
+===============================================================================
+Group : $unit::pcs_coverage::cg_pam5_sym
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+100.00 1      100    1        64           64            
+
+
+Source File(s) : 
+
+/home/018282472@SJSUAD.SJSU.EDU/uvm_pcs/uvm_tb.sv
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   $unit::pcs_coverage::cg_pam5_sym
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 20       0         20      100.00  
+
+
+Variables for Group  $unit::pcs_coverage::cg_pam5_sym
+
+
+VARIABLE EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_A     5        0         5       100.00  100  1      1        0                    
+cp_B     5        0         5       100.00  100  1      1        0                    
+cp_C     5        0         5       100.00  100  1      1        0                    
+cp_D     5        0         5       100.00  100  1      1        0                    
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_A
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 5        0         5       100.00  
+
+
+User Defined Bins for cp_A
+
+
+Bins
+
+NAME COUNT AT LEAST 
+p2   1071  1        
+p1   239   1        
+z    1328  1        
+n1   223   1        
+n2   1005  1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_B
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 5        0         5       100.00  
+
+
+User Defined Bins for cp_B
+
+
+Bins
+
+NAME COUNT AT LEAST 
+p2   1314  1        
+p1   231   1        
+z    741   1        
+n1   251   1        
+n2   1329  1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_C
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 5        0         5       100.00  
+
+
+User Defined Bins for cp_C
+
+
+Bins
+
+NAME COUNT AT LEAST 
+p2   1327  1        
+p1   241   1        
+z    743   1        
+n1   239   1        
+n2   1316  1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_D
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 5        0         5       100.00  
+
+
+User Defined Bins for cp_D
+
+
+Bins
+
+NAME COUNT AT LEAST 
+p2   1209  1        
+p1   291   1        
+z    708   1        
+n1   330   1        
+n2   1328  1        
+
+

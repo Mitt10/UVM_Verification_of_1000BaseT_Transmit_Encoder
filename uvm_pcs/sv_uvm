@@ -1,0 +1,103 @@
+#!/usr/bin/csh -f
+# =============================================================
+# sv_uvm — VCS compile + simulate
+# IEEE 802.3 PCS TX UVM Testbench  |  EE 273 S'26
+#
+# USAGE:
+#   chmod +x sv_uvm
+#   ./sv_uvm DUTS26_0.sv uvm_tb.sv +UVM_TESTNAME=pcs_smoke_test
+#   ./sv_uvm DUTS26_0.sv uvm_tb.sv +UVM_TESTNAME=pcs_exhaustive_test
+# =============================================================
+
+source /apps/design_environment.csh
+setenv UVM_HOME /home/morris/uvm-1.2
+
+# ---- Parse args: separate files from plusargs ---------------
+set uvm_test    = "pcs_smoke_test"
+set design_files = ()
+
+foreach arg ($argv)
+    set is_test = `echo "$arg" | grep -c "^+UVM_TESTNAME="`
+    if ($is_test) then
+        set uvm_test = `echo "$arg" | sed 's/+UVM_TESTNAME=//'`
+    else
+        set design_files = ($design_files $arg)
+    endif
+end
+
+echo ""
+echo "========================================================"
+echo "  Test : $uvm_test"
+echo "  Files: $design_files"
+echo "========================================================"
+
+# ---- Check every input file exists --------------------------
+foreach f ($design_files)
+    if (! -f "$f") then
+        echo "ERROR: Cannot find file: $f"
+        echo "       Current directory: `pwd`"
+        echo "       Files here: `ls *.sv`"
+        exit 1
+    endif
+end
+
+# ---- Compile ------------------------------------------------
+# NOTE: +UVM_TESTNAME is a RUNTIME arg — do NOT put it here
+echo "=== Compiling ==="
+vcs \
+  -full64 \
+  -sverilog \
+  -timescale=1ns/1ps \
+  +vpi \
+  +define+UVM_OBJECT_MUST_HAVE_CONSTRUCTOR \
+  +incdir+${UVM_HOME}/src \
+  -cm line+cond+fsm+tgl+branch+assert \
+  -cm_dir ./coverage.vdb \
+  -l compile.log \
+  ${UVM_HOME}/src/uvm.sv \
+  $design_files \
+  ${UVM_HOME}/src/dpi/uvm_dpi.cc \
+  -CFLAGS "-DVCS"
+
+if ($status != 0) then
+    echo "=== COMPILE FAILED -- see compile.log ==="
+    exit 1
+endif
+echo "=== Compile OK ==="
+
+# ---- Simulate -----------------------------------------------
+# +UVM_TESTNAME goes here at RUNTIME
+echo "=== Simulating: $uvm_test ==="
+./simv \
+  +UVM_TESTNAME=${uvm_test} \
+  +UVM_VERBOSITY=UVM_MEDIUM \
+  -cm line+cond+fsm+tgl+branch+assert \
+  -cm_dir ./coverage.vdb \
+  -cm_name ${uvm_test} \
+  |& tee sim_${uvm_test}.log
+
+if ($status != 0) then
+    echo "=== SIMULATION FAILED -- see sim_${uvm_test}.log ==="
+    exit 1
+endif
+
+# ---- Print summary ------------------------------------------
+echo ""
+echo "========================================================"
+echo "  SCOREBOARD"
+echo "========================================================"
+grep -E "Total|Passed|Failed|PAM5 err|Seq  err|Sym  err|FAILURES|TEST PASSED" \
+     sim_${uvm_test}.log
+
+echo ""
+echo "========================================================"
+echo "  COVERAGE"
+echo "========================================================"
+grep -E "stream_phase|pam5_sym|sign_reversal|sdd_pattern|esd_pattern|phase_trans|txen_edges|din_ranges|din7_data|csr_patterns|esd_mismatch|pkt_length|b2b_trans|txen_x_din7" \
+     sim_${uvm_test}.log
+
+echo ""
+echo "  Log     : sim_${uvm_test}.log"
+echo "  Coverage: coverage.vdb/"
+echo "========================================================"
+

@@ -1,0 +1,25 @@
+Testbench Group List
+
+Total Groups Coverage Summary 
+SCORE  WEIGHT 
+ 97.32 1      
+
+
+Total groups in report: 14
+-------------------------------------------------------------------------------
+SCORE  WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING COMMENT NAME                                  
+ 62.50 1      100    1        0            64           64                    $unit::pcs_coverage::cg_csr_patterns  
+100.00 1      100    1        0            64           64                    $unit::pcs_coverage::cg_b2b_trans     
+100.00 1      100    1        0            64           64                    $unit::pcs_coverage::cg_txen_edges    
+100.00 1      100    1        0            64           64                    $unit::pcs_coverage::cg_sdd_pattern   
+100.00 1      100    1        0            64           64                    $unit::pcs_coverage::cg_din7_data     
+100.00 1      100    1        0            64           64                    $unit::pcs_coverage::cg_esd_pattern   
+100.00 1      100    1        0            64           64                    $unit::pcs_coverage::cg_pkt_length    
+100.00 1      100    1        0            64           64                    $unit::pcs_coverage::cg_phase_trans   
+100.00 1      100    1        0            64           64                    $unit::pcs_coverage::cg_txen_x_din7   
+100.00 1      100    1        0            64           64                    $unit::pcs_coverage::cg_esd_mismatch  
+100.00 1      100    1        0            64           64                    $unit::pcs_coverage::cg_stream_phase  
+100.00 1      100    1        0            64           64                    $unit::pcs_coverage::cg_sign_reversal 
+100.00 1      100    1        0            64           64                    $unit::pcs_coverage::cg_din_ranges    
+100.00 1      100    1        0            64           64                    $unit::pcs_coverage::cg_pam5_sym      
+

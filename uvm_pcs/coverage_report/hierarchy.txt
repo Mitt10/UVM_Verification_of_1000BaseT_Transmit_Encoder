@@ -1,0 +1,12 @@
+Design Hierarchy
+
+
+----------------
+SCORE  LINE   COND   TOGGLE FSM    BRANCH ASSERT            
+ 78.96  93.38  99.57  54.03  46.67  92.61  87.50 pcs_tb_top 
+  
+  ----------------
+  SCORE  LINE   COND   TOGGLE FSM    BRANCH ASSERT        
+   76.49  93.69  99.57  49.65  46.67  92.87 --     dut    
+   97.83 --     --      97.83 --     --     --     dut_if 
+

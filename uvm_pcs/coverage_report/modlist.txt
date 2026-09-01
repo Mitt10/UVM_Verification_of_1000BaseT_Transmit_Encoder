@@ -1,0 +1,15 @@
+Design Module List
+
+Total Module Definition Coverage Summary 
+SCORE  LINE   COND   TOGGLE FSM    BRANCH ASSERT 
+ 77.53  93.38  99.57  54.03  46.67  92.61  78.95 
+
+
+Total modules in report: 4
+-------------------------------------------------------------------------------
+SCORE  LINE   COND   TOGGLE FSM    BRANCH ASSERT NAME       
+ 33.33 --     --     --     --     --      33.33 uvm_pkg    
+ 76.49  93.69  99.57  49.65  46.67  92.87 --     DUTS26_0   
+ 82.35  80.00 --      95.24 --      66.67  87.50 pcs_tb_top 
+ 97.83 --     --      97.83 --     --     --     pcs_if     
+

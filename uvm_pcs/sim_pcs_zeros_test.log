@@ -1,0 +1,350 @@
+Info: [VCS_SAVE_RESTORE_INFO] ASLR (Address Space Layout Randomization) is detected on the machine. To enable $save functionality, ASLR will be switched off and simv re-executed.
+Please use '-no_save' simv switch to avoid re-execution or '-suppress=ASLR_DETECTED_INFO' to suppress this message.
+Chronologic VCS simulator copyright 1991-2023
+Contains Synopsys proprietary information.
+Compiler version U-2023.03-SP2-8_Full64; Runtime version U-2023.03-SP2-8_Full64;  May 11 15:57 2026
+UVM_INFO /home/morris/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+
+ VCS Coverage Metrics Release U-2023.03-SP2-8_Full64 Copyright (c) 1991-2023 by Synopsys Inc.
+UVM_INFO @ 0: reporter [RNTST] Running test pcs_zeros_test...
+UVM_INFO uvm_tb.sv(1872) @ 0: uvm_test_top [TEST] === ZEROS TEST ===
+"uvm_tb.sv", 2217: pcs_tb_top.AST_NOX_A: started at 4000ps failed at 4000ps
+	Offending '(!$isunknown(pcs_tb_top.dut_if.Dout[3]))'
+Error: "uvm_tb.sv", 2217: pcs_tb_top.AST_NOX_A: at time 4000 ps
+[ASSERT/NOX] lane A is X/Z @ 4000
+"uvm_tb.sv", 2219: pcs_tb_top.AST_NOX_B: started at 4000ps failed at 4000ps
+	Offending '(!$isunknown(pcs_tb_top.dut_if.Dout[2]))'
+Error: "uvm_tb.sv", 2219: pcs_tb_top.AST_NOX_B: at time 4000 ps
+[ASSERT/NOX] lane B is X/Z @ 4000
+"uvm_tb.sv", 2221: pcs_tb_top.AST_NOX_C: started at 4000ps failed at 4000ps
+	Offending '(!$isunknown(pcs_tb_top.dut_if.Dout[1]))'
+Error: "uvm_tb.sv", 2221: pcs_tb_top.AST_NOX_C: at time 4000 ps
+[ASSERT/NOX] lane C is X/Z @ 4000
+"uvm_tb.sv", 2223: pcs_tb_top.AST_NOX_D: started at 4000ps failed at 4000ps
+	Offending '(!$isunknown(pcs_tb_top.dut_if.Dout[0]))'
+Error: "uvm_tb.sv", 2223: pcs_tb_top.AST_NOX_D: at time 4000 ps
+[ASSERT/NOX] lane D is X/Z @ 4000
+UVM_ERROR uvm_tb.sv(1312) @ 68000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=db0 act=036 ph=PH_IDLE cycle=2
+UVM_ERROR uvm_tb.sv(1312) @ 76000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=006 act=180 ph=PH_IDLE cycle=3
+UVM_ERROR uvm_tb.sv(1312) @ 84000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=1b0 act=036 ph=PH_IDLE cycle=4
+UVM_ERROR uvm_tb.sv(1312) @ 92000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=006 act=000 ph=PH_IDLE cycle=5
+UVM_ERROR uvm_tb.sv(1312) @ 100000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=0b0 act=0b6 ph=PH_IDLE cycle=6
+UVM_ERROR uvm_tb.sv(1312) @ 108000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=006 act=180 ph=PH_SDD cycle=7
+"uvm_tb.sv", 2275: pcs_tb_top.AST_SDD1_NONZERO: started at 108000ps failed at 108000ps
+	Offending '((((pcs_tb_top.dut_if.Dout[3] inside {3'b010, 3'b110}) && (pcs_tb_top.dut_if.Dout[2] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[1] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[0] inside {3'b010, 3'b110}))'
+Error: "uvm_tb.sv", 2275: pcs_tb_top.AST_SDD1_NONZERO: at time 108000 ps
+[ASSERT/SDD] SDD1: lane(s) not ±2 at TX_EN rise: got 180 @ 108000
+"uvm_tb.sv", 2355: pcs_tb_top.AST_SDD_EXACTLY2: started at 108000ps failed at 124000ps
+	Offending '(!((((pcs_tb_top.dut_if.Dout[3] inside {3'b010, 3'b110}) && (pcs_tb_top.dut_if.Dout[2] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[1] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[0] inside {3'b010, 3'b110})))'
+Error: "uvm_tb.sv", 2355: pcs_tb_top.AST_SDD_EXACTLY2: at time 124000 ps
+[ASSERT/ORDER] All-±2 output persists after SDD2 (stuck in SDD?) @ 124000
+UVM_ERROR uvm_tb.sv(1312) @ 132000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=030 act=036 ph=PH_DATA cycle=10
+UVM_ERROR uvm_tb.sv(1312) @ 140000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=e79 act=e49 ph=PH_DATA cycle=11
+UVM_ERROR uvm_tb.sv(1312) @ 148000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=e76 act=ff0 ph=PH_DATA cycle=12
+UVM_ERROR uvm_tb.sv(1312) @ 156000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=3bf act=f8a ph=PH_CSR cycle=13
+UVM_ERROR uvm_tb.sv(1312) @ 164000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=c56 act=eba ph=PH_CSR cycle=14
+UVM_ERROR uvm_tb.sv(1312) @ 172000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=d89 act=497 ph=PH_ESD cycle=15
+"uvm_tb.sv", 2305: pcs_tb_top.AST_ESD1_NONZERO: started at 156000ps failed at 172000ps
+	Offending '((((pcs_tb_top.dut_if.Dout[3] inside {3'b010, 3'b110}) && (pcs_tb_top.dut_if.Dout[2] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[1] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[0] inside {3'b010, 3'b110}))'
+Error: "uvm_tb.sv", 2305: pcs_tb_top.AST_ESD1_NONZERO: at time 172000 ps
+[ASSERT/ESD] ESD1: lane(s) not ±2 two cycles after TX_EN fall: got 497 @ 172000
+UVM_ERROR uvm_tb.sv(1312) @ 180000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=db6 act=c96 ph=PH_ESD cycle=16
+"uvm_tb.sv", 2372: pcs_tb_top.AST_ESD_EXACTLY2: started at 156000ps failed at 188000ps
+	Offending '(!((((pcs_tb_top.dut_if.Dout[3] inside {3'b010, 3'b110}) && (pcs_tb_top.dut_if.Dout[2] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[1] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[0] inside {3'b010, 3'b110})))'
+Error: "uvm_tb.sv", 2372: pcs_tb_top.AST_ESD_EXACTLY2: at time 188000 ps
+[ASSERT/ORDER] All-±2 output persists after ESD2 (stuck in ESD?) @ 188000
+UVM_ERROR uvm_tb.sv(1312) @ 196000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=000 act=012 ph=PH_SDD cycle=18
+"uvm_tb.sv", 2275: pcs_tb_top.AST_SDD1_NONZERO: started at 196000ps failed at 196000ps
+	Offending '((((pcs_tb_top.dut_if.Dout[3] inside {3'b010, 3'b110}) && (pcs_tb_top.dut_if.Dout[2] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[1] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[0] inside {3'b010, 3'b110}))'
+Error: "uvm_tb.sv", 2275: pcs_tb_top.AST_SDD1_NONZERO: at time 196000 ps
+[ASSERT/SDD] SDD1: lane(s) not ±2 at TX_EN rise: got 012 @ 196000
+"uvm_tb.sv", 2355: pcs_tb_top.AST_SDD_EXACTLY2: started at 196000ps failed at 212000ps
+	Offending '(!((((pcs_tb_top.dut_if.Dout[3] inside {3'b010, 3'b110}) && (pcs_tb_top.dut_if.Dout[2] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[1] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[0] inside {3'b010, 3'b110})))'
+Error: "uvm_tb.sv", 2355: pcs_tb_top.AST_SDD_EXACTLY2: at time 212000 ps
+[ASSERT/ORDER] All-±2 output persists after SDD2 (stuck in SDD?) @ 212000
+UVM_ERROR uvm_tb.sv(1312) @ 220000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=002 act=1b2 ph=PH_DATA cycle=21
+UVM_ERROR uvm_tb.sv(1312) @ 228000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=c7e act=c4e ph=PH_DATA cycle=22
+UVM_ERROR uvm_tb.sv(1312) @ 236000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=432 act=407 ph=PH_DATA cycle=23
+UVM_ERROR uvm_tb.sv(1312) @ 244000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=4b7 act=c96 ph=PH_CSR cycle=24
+UVM_ERROR uvm_tb.sv(1312) @ 252000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=d89 act=ebe ph=PH_CSR cycle=25
+UVM_ERROR uvm_tb.sv(1312) @ 260000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=c96 act=5b1 ph=PH_ESD cycle=26
+"uvm_tb.sv", 2305: pcs_tb_top.AST_ESD1_NONZERO: started at 244000ps failed at 260000ps
+	Offending '((((pcs_tb_top.dut_if.Dout[3] inside {3'b010, 3'b110}) && (pcs_tb_top.dut_if.Dout[2] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[1] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[0] inside {3'b010, 3'b110}))'
+Error: "uvm_tb.sv", 2305: pcs_tb_top.AST_ESD1_NONZERO: at time 260000 ps
+[ASSERT/ESD] ESD1: lane(s) not ±2 two cycles after TX_EN fall: got 5b1 @ 260000
+UVM_ERROR uvm_tb.sv(1312) @ 268000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=db6 act=496 ph=PH_ESD cycle=27
+"uvm_tb.sv", 2372: pcs_tb_top.AST_ESD_EXACTLY2: started at 244000ps failed at 276000ps
+	Offending '(!((((pcs_tb_top.dut_if.Dout[3] inside {3'b010, 3'b110}) && (pcs_tb_top.dut_if.Dout[2] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[1] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[0] inside {3'b010, 3'b110})))'
+Error: "uvm_tb.sv", 2372: pcs_tb_top.AST_ESD_EXACTLY2: at time 276000 ps
+[ASSERT/ORDER] All-±2 output persists after ESD2 (stuck in ESD?) @ 276000
+UVM_ERROR uvm_tb.sv(1312) @ 284000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=006 act=086 ph=PH_SDD cycle=29
+"uvm_tb.sv", 2275: pcs_tb_top.AST_SDD1_NONZERO: started at 284000ps failed at 284000ps
+	Offending '((((pcs_tb_top.dut_if.Dout[3] inside {3'b010, 3'b110}) && (pcs_tb_top.dut_if.Dout[2] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[1] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[0] inside {3'b010, 3'b110}))'
+Error: "uvm_tb.sv", 2275: pcs_tb_top.AST_SDD1_NONZERO: at time 284000 ps
+[ASSERT/SDD] SDD1: lane(s) not ±2 at TX_EN rise: got 086 @ 284000
+"uvm_tb.sv", 2355: pcs_tb_top.AST_SDD_EXACTLY2: started at 284000ps failed at 300000ps
+	Offending '(!((((pcs_tb_top.dut_if.Dout[3] inside {3'b010, 3'b110}) && (pcs_tb_top.dut_if.Dout[2] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[1] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[0] inside {3'b010, 3'b110})))'
+Error: "uvm_tb.sv", 2355: pcs_tb_top.AST_SDD_EXACTLY2: at time 300000 ps
+[ASSERT/ORDER] All-±2 output persists after SDD2 (stuck in SDD?) @ 300000
+UVM_ERROR uvm_tb.sv(1312) @ 308000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=090 act=086 ph=PH_DATA cycle=32
+UVM_ERROR uvm_tb.sv(1312) @ 316000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=0bf act=009 ph=PH_DATA cycle=33
+UVM_ERROR uvm_tb.sv(1312) @ 324000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=dc9 act=df9 ph=PH_DATA cycle=34
+UVM_ERROR uvm_tb.sv(1312) @ 340000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=3b1 act=c52 ph=PH_CSR cycle=36
+UVM_ERROR uvm_tb.sv(1312) @ 348000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=c96 act=497 ph=PH_ESD cycle=37
+"uvm_tb.sv", 2305: pcs_tb_top.AST_ESD1_NONZERO: started at 332000ps failed at 348000ps
+	Offending '((((pcs_tb_top.dut_if.Dout[3] inside {3'b010, 3'b110}) && (pcs_tb_top.dut_if.Dout[2] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[1] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[0] inside {3'b010, 3'b110}))'
+Error: "uvm_tb.sv", 2305: pcs_tb_top.AST_ESD1_NONZERO: at time 348000 ps
+[ASSERT/ESD] ESD1: lane(s) not ±2 two cycles after TX_EN fall: got 497 @ 348000
+UVM_ERROR uvm_tb.sv(1312) @ 356000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=db6 act=496 ph=PH_ESD cycle=38
+"uvm_tb.sv", 2372: pcs_tb_top.AST_ESD_EXACTLY2: started at 332000ps failed at 364000ps
+	Offending '(!((((pcs_tb_top.dut_if.Dout[3] inside {3'b010, 3'b110}) && (pcs_tb_top.dut_if.Dout[2] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[1] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[0] inside {3'b010, 3'b110})))'
+Error: "uvm_tb.sv", 2372: pcs_tb_top.AST_ESD_EXACTLY2: at time 364000 ps
+[ASSERT/ORDER] All-±2 output persists after ESD2 (stuck in ESD?) @ 364000
+UVM_ERROR uvm_tb.sv(1312) @ 372000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=090 act=010 ph=PH_SDD cycle=40
+"uvm_tb.sv", 2275: pcs_tb_top.AST_SDD1_NONZERO: started at 372000ps failed at 372000ps
+	Offending '((((pcs_tb_top.dut_if.Dout[3] inside {3'b010, 3'b110}) && (pcs_tb_top.dut_if.Dout[2] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[1] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[0] inside {3'b010, 3'b110}))'
+Error: "uvm_tb.sv", 2275: pcs_tb_top.AST_SDD1_NONZERO: at time 372000 ps
+[ASSERT/SDD] SDD1: lane(s) not ±2 at TX_EN rise: got 010 @ 372000
+"uvm_tb.sv", 2355: pcs_tb_top.AST_SDD_EXACTLY2: started at 372000ps failed at 388000ps
+	Offending '(!((((pcs_tb_top.dut_if.Dout[3] inside {3'b010, 3'b110}) && (pcs_tb_top.dut_if.Dout[2] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[1] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[0] inside {3'b010, 3'b110})))'
+Error: "uvm_tb.sv", 2355: pcs_tb_top.AST_SDD_EXACTLY2: at time 388000 ps
+[ASSERT/ORDER] All-±2 output persists after SDD2 (stuck in SDD?) @ 388000
+UVM_ERROR uvm_tb.sv(1312) @ 404000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=5b6 act=436 ph=PH_DATA cycle=44
+UVM_ERROR uvm_tb.sv(1312) @ 420000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=48a act=438 ph=PH_CSR cycle=46
+UVM_ERROR uvm_tb.sv(1312) @ 428000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=d89 act=5f6 ph=PH_CSR cycle=47
+UVM_ERROR uvm_tb.sv(1312) @ 436000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=c96 act=4b1 ph=PH_ESD cycle=48
+"uvm_tb.sv", 2305: pcs_tb_top.AST_ESD1_NONZERO: started at 420000ps failed at 436000ps
+	Offending '((((pcs_tb_top.dut_if.Dout[3] inside {3'b010, 3'b110}) && (pcs_tb_top.dut_if.Dout[2] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[1] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[0] inside {3'b010, 3'b110}))'
+Error: "uvm_tb.sv", 2305: pcs_tb_top.AST_ESD1_NONZERO: at time 436000 ps
+[ASSERT/ESD] ESD1: lane(s) not ±2 two cycles after TX_EN fall: got 4b1 @ 436000
+UVM_ERROR uvm_tb.sv(1312) @ 444000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=db6 act=5b6 ph=PH_ESD cycle=49
+"uvm_tb.sv", 2372: pcs_tb_top.AST_ESD_EXACTLY2: started at 420000ps failed at 452000ps
+	Offending '(!((((pcs_tb_top.dut_if.Dout[3] inside {3'b010, 3'b110}) && (pcs_tb_top.dut_if.Dout[2] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[1] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[0] inside {3'b010, 3'b110})))'
+Error: "uvm_tb.sv", 2372: pcs_tb_top.AST_ESD_EXACTLY2: at time 452000 ps
+[ASSERT/ORDER] All-±2 output persists after ESD2 (stuck in ESD?) @ 452000
+UVM_ERROR uvm_tb.sv(1312) @ 460000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=000 act=090 ph=PH_SDD cycle=51
+"uvm_tb.sv", 2275: pcs_tb_top.AST_SDD1_NONZERO: started at 460000ps failed at 460000ps
+	Offending '((((pcs_tb_top.dut_if.Dout[3] inside {3'b010, 3'b110}) && (pcs_tb_top.dut_if.Dout[2] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[1] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[0] inside {3'b010, 3'b110}))'
+Error: "uvm_tb.sv", 2275: pcs_tb_top.AST_SDD1_NONZERO: at time 460000 ps
+[ASSERT/SDD] SDD1: lane(s) not ±2 at TX_EN rise: got 090 @ 460000
+"uvm_tb.sv", 2355: pcs_tb_top.AST_SDD_EXACTLY2: started at 460000ps failed at 476000ps
+	Offending '(!((((pcs_tb_top.dut_if.Dout[3] inside {3'b010, 3'b110}) && (pcs_tb_top.dut_if.Dout[2] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[1] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[0] inside {3'b010, 3'b110})))'
+Error: "uvm_tb.sv", 2355: pcs_tb_top.AST_SDD_EXACTLY2: at time 476000 ps
+[ASSERT/ORDER] All-±2 output persists after SDD2 (stuck in SDD?) @ 476000
+UVM_ERROR uvm_tb.sv(1312) @ 484000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=cb2 act=032 ph=PH_DATA cycle=54
+UVM_ERROR uvm_tb.sv(1312) @ 492000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=246 act=1b9 ph=PH_DATA cycle=55
+UVM_ERROR uvm_tb.sv(1312) @ 500000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=e06 act=eb6 ph=PH_DATA cycle=56
+UVM_ERROR uvm_tb.sv(1312) @ 508000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=e8e act=2ba ph=PH_CSR cycle=57
+UVM_ERROR uvm_tb.sv(1312) @ 516000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=c96 act=492 ph=PH_CSR cycle=58
+UVM_ERROR uvm_tb.sv(1312) @ 524000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=c96 act=db6 ph=PH_ESD cycle=59
+UVM_ERROR uvm_tb.sv(1312) @ 532000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=db6 act=492 ph=PH_ESD cycle=60
+"uvm_tb.sv", 2372: pcs_tb_top.AST_ESD_EXACTLY2: started at 508000ps failed at 540000ps
+	Offending '(!((((pcs_tb_top.dut_if.Dout[3] inside {3'b010, 3'b110}) && (pcs_tb_top.dut_if.Dout[2] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[1] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[0] inside {3'b010, 3'b110})))'
+Error: "uvm_tb.sv", 2372: pcs_tb_top.AST_ESD_EXACTLY2: at time 540000 ps
+[ASSERT/ORDER] All-±2 output persists after ESD2 (stuck in ESD?) @ 540000
+UVM_ERROR uvm_tb.sv(1312) @ 548000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=030 act=032 ph=PH_SDD cycle=62
+"uvm_tb.sv", 2275: pcs_tb_top.AST_SDD1_NONZERO: started at 548000ps failed at 548000ps
+	Offending '((((pcs_tb_top.dut_if.Dout[3] inside {3'b010, 3'b110}) && (pcs_tb_top.dut_if.Dout[2] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[1] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[0] inside {3'b010, 3'b110}))'
+Error: "uvm_tb.sv", 2275: pcs_tb_top.AST_SDD1_NONZERO: at time 548000 ps
+[ASSERT/SDD] SDD1: lane(s) not ±2 at TX_EN rise: got 032 @ 548000
+"uvm_tb.sv", 2355: pcs_tb_top.AST_SDD_EXACTLY2: started at 548000ps failed at 564000ps
+	Offending '(!((((pcs_tb_top.dut_if.Dout[3] inside {3'b010, 3'b110}) && (pcs_tb_top.dut_if.Dout[2] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[1] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[0] inside {3'b010, 3'b110})))'
+Error: "uvm_tb.sv", 2355: pcs_tb_top.AST_SDD_EXACTLY2: at time 564000 ps
+[ASSERT/ORDER] All-±2 output persists after SDD2 (stuck in SDD?) @ 564000
+UVM_ERROR uvm_tb.sv(1312) @ 580000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=3b8 act=38e ph=PH_DATA cycle=66
+UVM_ERROR uvm_tb.sv(1312) @ 588000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=e82 act=f96 ph=PH_DATA cycle=67
+UVM_ERROR uvm_tb.sv(1312) @ 596000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=1b8 act=088 ph=PH_CSR cycle=68
+UVM_ERROR uvm_tb.sv(1312) @ 604000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=38e act=cb6 ph=PH_CSR cycle=69
+UVM_ERROR uvm_tb.sv(1312) @ 612000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=c96 act=4b6 ph=PH_ESD cycle=70
+UVM_ERROR uvm_tb.sv(1312) @ 620000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=db6 act=5b6 ph=PH_ESD cycle=71
+"uvm_tb.sv", 2372: pcs_tb_top.AST_ESD_EXACTLY2: started at 596000ps failed at 628000ps
+	Offending '(!((((pcs_tb_top.dut_if.Dout[3] inside {3'b010, 3'b110}) && (pcs_tb_top.dut_if.Dout[2] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[1] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[0] inside {3'b010, 3'b110})))'
+Error: "uvm_tb.sv", 2372: pcs_tb_top.AST_ESD_EXACTLY2: at time 628000 ps
+[ASSERT/ORDER] All-±2 output persists after ESD2 (stuck in ESD?) @ 628000
+UVM_ERROR uvm_tb.sv(1312) @ 636000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=006 act=096 ph=PH_SDD cycle=73
+"uvm_tb.sv", 2275: pcs_tb_top.AST_SDD1_NONZERO: started at 636000ps failed at 636000ps
+	Offending '((((pcs_tb_top.dut_if.Dout[3] inside {3'b010, 3'b110}) && (pcs_tb_top.dut_if.Dout[2] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[1] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[0] inside {3'b010, 3'b110}))'
+Error: "uvm_tb.sv", 2275: pcs_tb_top.AST_SDD1_NONZERO: at time 636000 ps
+[ASSERT/SDD] SDD1: lane(s) not ±2 at TX_EN rise: got 096 @ 636000
+"uvm_tb.sv", 2355: pcs_tb_top.AST_SDD_EXACTLY2: started at 636000ps failed at 652000ps
+	Offending '(!((((pcs_tb_top.dut_if.Dout[3] inside {3'b010, 3'b110}) && (pcs_tb_top.dut_if.Dout[2] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[1] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[0] inside {3'b010, 3'b110})))'
+Error: "uvm_tb.sv", 2355: pcs_tb_top.AST_SDD_EXACTLY2: at time 652000 ps
+[ASSERT/ORDER] All-±2 output persists after SDD2 (stuck in SDD?) @ 652000
+UVM_ERROR uvm_tb.sv(1312) @ 660000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=032 act=1b0 ph=PH_DATA cycle=76
+UVM_ERROR uvm_tb.sv(1312) @ 668000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=1f7 act=c57 ph=PH_DATA cycle=77
+UVM_ERROR uvm_tb.sv(1312) @ 676000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=fc8 act=e4a ph=PH_DATA cycle=78
+UVM_ERROR uvm_tb.sv(1312) @ 684000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=5b8 act=c89 ph=PH_CSR cycle=79
+UVM_ERROR uvm_tb.sv(1312) @ 692000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=c56 act=fbe ph=PH_CSR cycle=80
+UVM_ERROR uvm_tb.sv(1312) @ 700000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=d89 act=c97 ph=PH_ESD cycle=81
+"uvm_tb.sv", 2305: pcs_tb_top.AST_ESD1_NONZERO: started at 684000ps failed at 700000ps
+	Offending '((((pcs_tb_top.dut_if.Dout[3] inside {3'b010, 3'b110}) && (pcs_tb_top.dut_if.Dout[2] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[1] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[0] inside {3'b010, 3'b110}))'
+Error: "uvm_tb.sv", 2305: pcs_tb_top.AST_ESD1_NONZERO: at time 700000 ps
+[ASSERT/ESD] ESD1: lane(s) not ±2 two cycles after TX_EN fall: got c97 @ 700000
+UVM_ERROR uvm_tb.sv(1312) @ 708000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=db6 act=cb2 ph=PH_ESD cycle=82
+"uvm_tb.sv", 2372: pcs_tb_top.AST_ESD_EXACTLY2: started at 684000ps failed at 716000ps
+	Offending '(!((((pcs_tb_top.dut_if.Dout[3] inside {3'b010, 3'b110}) && (pcs_tb_top.dut_if.Dout[2] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[1] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[0] inside {3'b010, 3'b110})))'
+Error: "uvm_tb.sv", 2372: pcs_tb_top.AST_ESD_EXACTLY2: at time 716000 ps
+[ASSERT/ORDER] All-±2 output persists after ESD2 (stuck in ESD?) @ 716000
+UVM_ERROR uvm_tb.sv(1312) @ 724000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=000 act=182 ph=PH_SDD cycle=84
+"uvm_tb.sv", 2275: pcs_tb_top.AST_SDD1_NONZERO: started at 724000ps failed at 724000ps
+	Offending '((((pcs_tb_top.dut_if.Dout[3] inside {3'b010, 3'b110}) && (pcs_tb_top.dut_if.Dout[2] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[1] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[0] inside {3'b010, 3'b110}))'
+Error: "uvm_tb.sv", 2275: pcs_tb_top.AST_SDD1_NONZERO: at time 724000 ps
+[ASSERT/SDD] SDD1: lane(s) not ±2 at TX_EN rise: got 182 @ 724000
+"uvm_tb.sv", 2355: pcs_tb_top.AST_SDD_EXACTLY2: started at 724000ps failed at 740000ps
+	Offending '(!((((pcs_tb_top.dut_if.Dout[3] inside {3'b010, 3'b110}) && (pcs_tb_top.dut_if.Dout[2] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[1] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[0] inside {3'b010, 3'b110})))'
+Error: "uvm_tb.sv", 2355: pcs_tb_top.AST_SDD_EXACTLY2: at time 740000 ps
+[ASSERT/ORDER] All-±2 output persists after SDD2 (stuck in SDD?) @ 740000
+UVM_ERROR uvm_tb.sv(1312) @ 748000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=c10 act=d96 ph=PH_DATA cycle=87
+UVM_ERROR uvm_tb.sv(1312) @ 764000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=e7a act=fca ph=PH_DATA cycle=89
+UVM_ERROR uvm_tb.sv(1312) @ 772000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=c08 act=3d7 ph=PH_CSR cycle=90
+UVM_ERROR uvm_tb.sv(1312) @ 780000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=c56 act=452 ph=PH_CSR cycle=91
+UVM_ERROR uvm_tb.sv(1312) @ 788000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=d89 act=db7 ph=PH_ESD cycle=92
+"uvm_tb.sv", 2305: pcs_tb_top.AST_ESD1_NONZERO: started at 772000ps failed at 788000ps
+	Offending '((((pcs_tb_top.dut_if.Dout[3] inside {3'b010, 3'b110}) && (pcs_tb_top.dut_if.Dout[2] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[1] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[0] inside {3'b010, 3'b110}))'
+Error: "uvm_tb.sv", 2305: pcs_tb_top.AST_ESD1_NONZERO: at time 788000 ps
+[ASSERT/ESD] ESD1: lane(s) not ±2 two cycles after TX_EN fall: got db7 @ 788000
+UVM_ERROR uvm_tb.sv(1312) @ 796000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=db6 act=596 ph=PH_ESD cycle=93
+"uvm_tb.sv", 2372: pcs_tb_top.AST_ESD_EXACTLY2: started at 772000ps failed at 804000ps
+	Offending '(!((((pcs_tb_top.dut_if.Dout[3] inside {3'b010, 3'b110}) && (pcs_tb_top.dut_if.Dout[2] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[1] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[0] inside {3'b010, 3'b110})))'
+Error: "uvm_tb.sv", 2372: pcs_tb_top.AST_ESD_EXACTLY2: at time 804000 ps
+[ASSERT/ORDER] All-±2 output persists after ESD2 (stuck in ESD?) @ 804000
+UVM_ERROR uvm_tb.sv(1312) @ 812000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=000 act=002 ph=PH_SDD cycle=95
+"uvm_tb.sv", 2275: pcs_tb_top.AST_SDD1_NONZERO: started at 812000ps failed at 812000ps
+	Offending '((((pcs_tb_top.dut_if.Dout[3] inside {3'b010, 3'b110}) && (pcs_tb_top.dut_if.Dout[2] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[1] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[0] inside {3'b010, 3'b110}))'
+Error: "uvm_tb.sv", 2275: pcs_tb_top.AST_SDD1_NONZERO: at time 812000 ps
+[ASSERT/SDD] SDD1: lane(s) not ±2 at TX_EN rise: got 002 @ 812000
+"uvm_tb.sv", 2355: pcs_tb_top.AST_SDD_EXACTLY2: started at 812000ps failed at 828000ps
+	Offending '(!((((pcs_tb_top.dut_if.Dout[3] inside {3'b010, 3'b110}) && (pcs_tb_top.dut_if.Dout[2] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[1] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[0] inside {3'b010, 3'b110})))'
+Error: "uvm_tb.sv", 2355: pcs_tb_top.AST_SDD_EXACTLY2: at time 828000 ps
+[ASSERT/ORDER] All-±2 output persists after SDD2 (stuck in SDD?) @ 828000
+UVM_ERROR uvm_tb.sv(1312) @ 836000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=1b0 act=006 ph=PH_DATA cycle=98
+UVM_ERROR uvm_tb.sv(1312) @ 844000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=c4e act=c7e ph=PH_DATA cycle=99
+UVM_ERROR uvm_tb.sv(1312) @ 852000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=3f2 act=277 ph=PH_DATA cycle=100
+UVM_ERROR uvm_tb.sv(1312) @ 860000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=489 act=0b9 ph=PH_CSR cycle=101
+UVM_ERROR uvm_tb.sv(1312) @ 868000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=cb1 act=c56 ph=PH_CSR cycle=102
+UVM_ERROR uvm_tb.sv(1312) @ 876000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=d89 act=591 ph=PH_ESD cycle=103
+"uvm_tb.sv", 2305: pcs_tb_top.AST_ESD1_NONZERO: started at 860000ps failed at 876000ps
+	Offending '((((pcs_tb_top.dut_if.Dout[3] inside {3'b010, 3'b110}) && (pcs_tb_top.dut_if.Dout[2] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[1] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[0] inside {3'b010, 3'b110}))'
+Error: "uvm_tb.sv", 2305: pcs_tb_top.AST_ESD1_NONZERO: at time 876000 ps
+[ASSERT/ESD] ESD1: lane(s) not ±2 two cycles after TX_EN fall: got 591 @ 876000
+UVM_ERROR uvm_tb.sv(1312) @ 884000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=db6 act=496 ph=PH_ESD cycle=104
+"uvm_tb.sv", 2372: pcs_tb_top.AST_ESD_EXACTLY2: started at 860000ps failed at 892000ps
+	Offending '(!((((pcs_tb_top.dut_if.Dout[3] inside {3'b010, 3'b110}) && (pcs_tb_top.dut_if.Dout[2] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[1] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[0] inside {3'b010, 3'b110})))'
+Error: "uvm_tb.sv", 2372: pcs_tb_top.AST_ESD_EXACTLY2: at time 892000 ps
+[ASSERT/ORDER] All-±2 output persists after ESD2 (stuck in ESD?) @ 892000
+UVM_ERROR uvm_tb.sv(1312) @ 900000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=d92 act=010 ph=PH_SDD cycle=106
+"uvm_tb.sv", 2275: pcs_tb_top.AST_SDD1_NONZERO: started at 900000ps failed at 900000ps
+	Offending '((((pcs_tb_top.dut_if.Dout[3] inside {3'b010, 3'b110}) && (pcs_tb_top.dut_if.Dout[2] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[1] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[0] inside {3'b010, 3'b110}))'
+Error: "uvm_tb.sv", 2275: pcs_tb_top.AST_SDD1_NONZERO: at time 900000 ps
+[ASSERT/SDD] SDD1: lane(s) not ±2 at TX_EN rise: got 010 @ 900000
+"uvm_tb.sv", 2355: pcs_tb_top.AST_SDD_EXACTLY2: started at 900000ps failed at 916000ps
+	Offending '(!((((pcs_tb_top.dut_if.Dout[3] inside {3'b010, 3'b110}) && (pcs_tb_top.dut_if.Dout[2] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[1] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[0] inside {3'b010, 3'b110})))'
+Error: "uvm_tb.sv", 2355: pcs_tb_top.AST_SDD_EXACTLY2: at time 916000 ps
+[ASSERT/ORDER] All-±2 output persists after SDD2 (stuck in SDD?) @ 916000
+UVM_ERROR uvm_tb.sv(1312) @ 924000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=002 act=0b0 ph=PH_DATA cycle=109
+UVM_ERROR uvm_tb.sv(1312) @ 932000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=e38 act=eb8 ph=PH_DATA cycle=110
+UVM_ERROR uvm_tb.sv(1312) @ 940000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=187 act=096 ph=PH_DATA cycle=111
+UVM_ERROR uvm_tb.sv(1312) @ 948000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=df9 act=3b7 ph=PH_CSR cycle=112
+UVM_ERROR uvm_tb.sv(1312) @ 956000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=d89 act=5b1 ph=PH_CSR cycle=113
+UVM_ERROR uvm_tb.sv(1312) @ 964000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=c96 act=d92 ph=PH_ESD cycle=114
+UVM_ERROR uvm_tb.sv(1312) @ 972000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=db6 act=596 ph=PH_ESD cycle=115
+"uvm_tb.sv", 2372: pcs_tb_top.AST_ESD_EXACTLY2: started at 948000ps failed at 980000ps
+	Offending '(!((((pcs_tb_top.dut_if.Dout[3] inside {3'b010, 3'b110}) && (pcs_tb_top.dut_if.Dout[2] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[1] inside {3'b010, 3'b110})) && (pcs_tb_top.dut_if.Dout[0] inside {3'b010, 3'b110})))'
+Error: "uvm_tb.sv", 2372: pcs_tb_top.AST_ESD_EXACTLY2: at time 980000 ps
+[ASSERT/ORDER] All-±2 output persists after ESD2 (stuck in ESD?) @ 980000
+UVM_ERROR uvm_tb.sv(1312) @ 988000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=186 act=1b6 ph=PH_IDLE cycle=117
+UVM_ERROR uvm_tb.sv(1312) @ 996000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=190 act=000 ph=PH_IDLE cycle=118
+UVM_ERROR uvm_tb.sv(1312) @ 1004000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=c06 act=0b0 ph=PH_IDLE cycle=119
+UVM_ERROR uvm_tb.sv(1312) @ 1012000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=590 act=006 ph=PH_IDLE cycle=120
+UVM_ERROR uvm_tb.sv(1312) @ 1020000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=006 act=000 ph=PH_IDLE cycle=121
+UVM_ERROR uvm_tb.sv(1312) @ 1028000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=002 act=092 ph=PH_IDLE cycle=122
+UVM_ERROR uvm_tb.sv(1312) @ 1036000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=090 act=000 ph=PH_IDLE cycle=123
+UVM_ERROR uvm_tb.sv(1312) @ 1044000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=090 act=096 ph=PH_IDLE cycle=124
+UVM_ERROR uvm_tb.sv(1312) @ 1052000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=006 act=1b0 ph=PH_IDLE cycle=125
+UVM_ERROR uvm_tb.sv(1312) @ 1060000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=080 act=006 ph=PH_IDLE cycle=126
+UVM_ERROR uvm_tb.sv(1312) @ 1068000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=032 act=002 ph=PH_IDLE cycle=127
+UVM_ERROR uvm_tb.sv(1312) @ 1076000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=032 act=1b0 ph=PH_IDLE cycle=128
+UVM_ERROR uvm_tb.sv(1312) @ 1084000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=080 act=0b2 ph=PH_IDLE cycle=129
+UVM_ERROR uvm_tb.sv(1312) @ 1092000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=1b2 act=000 ph=PH_IDLE cycle=130
+UVM_ERROR uvm_tb.sv(1312) @ 1100000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=000 act=180 ph=PH_IDLE cycle=131
+UVM_ERROR uvm_tb.sv(1312) @ 1108000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=cb2 act=032 ph=PH_IDLE cycle=132
+UVM_ERROR uvm_tb.sv(1312) @ 1116000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=400 act=086 ph=PH_IDLE cycle=133
+UVM_ERROR uvm_tb.sv(1312) @ 1124000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=596 act=010 ph=PH_IDLE cycle=134
+UVM_ERROR uvm_tb.sv(1312) @ 1132000: uvm_test_top.env.sb [SB/SYM] MISMATCH exp=000 act=030 ph=PH_IDLE cycle=135
+UVM_INFO /home/morris/uvm-1.2/src/base/uvm_objection.svh(1270) @ 1140000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO uvm_tb.sv(1645) @ 1140000: uvm_test_top.env.cov [COV] ======= COVERAGE =======
+UVM_INFO uvm_tb.sv(1647) @ 1140000: uvm_test_top.env.cov [COV]   stream_phase : 100.0%
+UVM_INFO uvm_tb.sv(1649) @ 1140000: uvm_test_top.env.cov [COV]   pam5_sym     : 100.0%
+UVM_INFO uvm_tb.sv(1651) @ 1140000: uvm_test_top.env.cov [COV]   sign_reversal: 100.0%
+UVM_INFO uvm_tb.sv(1653) @ 1140000: uvm_test_top.env.cov [COV]   sdd_pattern  : 100.0%
+UVM_INFO uvm_tb.sv(1655) @ 1140000: uvm_test_top.env.cov [COV]   esd_pattern  : 100.0%
+UVM_INFO uvm_tb.sv(1657) @ 1140000: uvm_test_top.env.cov [COV]   phase_trans  : 100.0%
+UVM_INFO uvm_tb.sv(1660) @ 1140000: uvm_test_top.env.cov [COV]   txen_edges   : 100.0%
+UVM_INFO uvm_tb.sv(1662) @ 1140000: uvm_test_top.env.cov [COV]   din_ranges   : 100.0%
+UVM_INFO uvm_tb.sv(1664) @ 1140000: uvm_test_top.env.cov [COV]   din7_data    : 100.0%
+UVM_INFO uvm_tb.sv(1666) @ 1140000: uvm_test_top.env.cov [COV]   csr_patterns : 12.5%
+UVM_INFO uvm_tb.sv(1668) @ 1140000: uvm_test_top.env.cov [COV]   esd_mismatch : 75.0%
+UVM_INFO uvm_tb.sv(1670) @ 1140000: uvm_test_top.env.cov [COV]   pkt_length   : 100.0%
+UVM_INFO uvm_tb.sv(1672) @ 1140000: uvm_test_top.env.cov [COV]   b2b_trans    : 66.7%
+UVM_INFO uvm_tb.sv(1674) @ 1140000: uvm_test_top.env.cov [COV]   txen_x_din7  : 100.0%
+UVM_INFO uvm_tb.sv(1676) @ 1140000: uvm_test_top.env.cov [COV] ========================
+UVM_INFO uvm_tb.sv(1322) @ 1140000: uvm_test_top.env.sb [SB] ============ SCOREBOARD ============
+UVM_INFO uvm_tb.sv(1323) @ 1140000: uvm_test_top.env.sb [SB]   Total   : 135
+UVM_INFO uvm_tb.sv(1324) @ 1140000: uvm_test_top.env.sb [SB]   Passed  : 160
+UVM_INFO uvm_tb.sv(1325) @ 1140000: uvm_test_top.env.sb [SB]   Failed  : 99
+UVM_INFO uvm_tb.sv(1326) @ 1140000: uvm_test_top.env.sb [SB]   PAM5 err: 0
+UVM_INFO uvm_tb.sv(1327) @ 1140000: uvm_test_top.env.sb [SB]   Seq  err: 0
+UVM_INFO uvm_tb.sv(1328) @ 1140000: uvm_test_top.env.sb [SB]   Sym  err: 99
+UVM_ERROR uvm_tb.sv(1332) @ 1140000: uvm_test_top.env.sb [SB]   *** 99 FAILURES ***
+UVM_INFO uvm_tb.sv(1333) @ 1140000: uvm_test_top.env.sb [SB] ====================================
+UVM_INFO /home/morris/uvm-1.2/src/base/uvm_report_server.svh(847) @ 1140000: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :   28
+UVM_WARNING :    0
+UVM_ERROR :  100
+UVM_FATAL :    0
+** Report counts by id
+[COV]    16
+[RNTST]     1
+[SB]     9
+[SB/SYM]    99
+[TEST]     1
+[TEST_DONE]     1
+[UVM/RELNOTES]     1
+
+$finish called from file "/home/morris/uvm-1.2/src/base/uvm_root.svh", line 517.
+$finish at simulation time              1140000
+
+---------------------------------------------------------------------------
+VCS Coverage Metrics: during simulation line, cond, FSM, branch, tgl was monitored
+---------------------------------------------------------------------------
+
+ Coverage status: End of All Coverages ...
+
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 1140000 ps
+CPU Time:      0.490 seconds;       Data structure size:   0.3Mb
+Mon May 11 15:57:16 2026
